@@ -1,0 +1,13 @@
+{
+  "name": "rider",
+  "version": "1.0.0",
+  "description": "Rider - Entrypoint",
+  "scripts": {},
+  "keywords": [],
+  "dependencies": {
+    "@types/node": "^22.13.4",
+    "concurrently": "^9.1.0",
+    "node": "^23.8.0"
+  },
+  "private": true
+}
