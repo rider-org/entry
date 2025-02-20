@@ -4,7 +4,7 @@
   "description": "Rider - Entrypoint",
   "scripts": {
     "repo:clone": "tsx cloneRepos.ts",
-    "git:status": "find . -name .git -type d -execdir sh -c 'echo \"\\033[34mCurrent Repository Folder:\\033[0m \\033[32m$PWD\\033[0m\";git status' \\;"
+    "git:status": "./git-status.sh"
   },
   "keywords": [],
   "dependencies": {
