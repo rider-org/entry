@@ -2,12 +2,17 @@
   "name": "rider",
   "version": "1.0.0",
   "description": "Rider - Entrypoint",
-  "scripts": {},
+  "scripts": {
+    "repo:clone": "tsx cloneRepos.ts",
+    "git:status": "find . -name .git -type d -execdir sh -c 'echo \"\\033[34mCurrent Repository Folder:\\033[0m \\033[32m$PWD\\033[0m\";git status' \\;"
+  },
   "keywords": [],
   "dependencies": {
     "@types/node": "^22.13.4",
     "concurrently": "^9.1.0",
-    "node": "^23.8.0"
+    "node": "^23.8.0",
+    "tsx": "^4.19.3"
   },
-  "private": true
+  "private": true,
+  "packageManager": "pnpm@9.15.5"
 }
