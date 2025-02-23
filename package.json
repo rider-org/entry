@@ -4,13 +4,15 @@
   "description": "Rider - Entrypoint",
   "scripts": {
     "repo:clone": "tsx cloneRepos.ts",
-    "git:status": "./git-status.sh"
+    "git:status": "./git-status.sh",
+    "install:all": "pnpm i -r",
+    "update:all": "pnpm up -r \"@rider/*\"",
+    "nuke:all": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +"
   },
   "keywords": [],
   "dependencies": {
     "@types/node": "^22.13.4",
-    "concurrently": "^9.1.0",
-    "node": "^23.8.0",
+    "concurrently": "^9.1.2",
     "tsx": "^4.19.3"
   },
   "private": true,

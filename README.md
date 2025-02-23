@@ -70,6 +70,8 @@ Install the minimal dependencies (pnpm is the preferred package manager for Ride
 pnpm install
 ```
 
+### Commands
+
 To install the repositories that are part of the Rider ecosystem, run the following command:
 
 ```bash
@@ -81,6 +83,18 @@ If you want to see the status of all the changes within each repository, you can
 ```bash
 pnpm run git:status
 ```
+
+If you need to run some operations on all the repositories, there are some listed below:
+
+```bash
+pnpm run install:all
+pnpm run nuke:all
+pnpm run update:all
+```
+
+- install:all - Recursively installs all the node_modules for each repository
+- nuke:all - Recursively deletes all node_modules for each repository
+- update:all - Updates the "@rider/\*" packages for each repository
 
 ---
 
