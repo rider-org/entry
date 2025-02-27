@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Rider - Entrypoint",
   "scripts": {
-    "dev": "concurrently \"cd server && pnpm run dev\"",
+    "dev": "concurrently \"cd server && pnpm run dev\" \"cd mobile && ppnpm run ios\"",
     "repo:clone": "tsx cloneRepos.ts",
     "git:pull": "./git-pull.sh",
     "git:status": "./git-status.sh",
