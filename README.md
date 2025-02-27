@@ -84,6 +84,12 @@ If you want to see the status of all the changes within each repository, you can
 pnpm run git:status
 ```
 
+If you would like to do a mass git pull within each repo, you can run the following command:
+
+```bash
+pnpm run git:pull
+```
+
 If you need to run some operations on all the repositories, there are some listed below:
 
 ```bash
